@@ -1,0 +1,32 @@
+
+{{#if loginid}}
+  {{> edit-info post}}
+{{else}}
+  {{> post-info post}}
+{{/if}}
+
+
+
+{{#if loggedIn}}
+<form class="comment-form">
+  <section class="card">
+      <div class="card_title" style="color: white">New Comment </div>  
+      <div class="card_detail">
+        </br>
+        <label for="comment_body">Comment</label> </br>
+        <input class="comment_body" id="comment_body" type="text" />
+      </div>
+      <div class="card_detail">
+        </br> </br>
+        <button class="btn_full" type="submit">Add Comment</button>
+        </br> </br>
+      </div>
+    </section>
+</form>
+{{/if}}
+
+{{> comments post.comments}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}

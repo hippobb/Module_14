@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 14 MVC</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>
+        <div class="h_container">  
+        <a class="H_link" href="/">Home</a>
+        
+        <a class="H_link" href="/dashboard">Dashboard</a>
+        {{#if loggedIn}}
+        <a class="H_link" id="logout" href="/">Logout</a>
+        {{else}}
+        <a class="H_link" href="/login">Login</a>
+        {{/if}}
+       </div></br>
+      <input type="textbox" id="header_title" value="The Tech Blog" readonly="true">
+ 
+      </h1>
+    </header>
+    <main>
+    </br></br>
+      {{{ body }}}
+    </main>
+    <footer>
+    </footer>
+  </div>
+  
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<article>
+  <form class="edit-post-form">  
+  <section class="card">
+      <div class="card_title" style="color: white">Edit Post </div>  
+      <div class="card_detail">
+        </br>
+        <label for="post_title">Title</label> </br>
+        <input class="title" id="post_title" type="text" value={{post.title}}  />
+        <a class="info" href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
+      </div>
+      <div class="card_detail">
+        </br>
+        <label for="post_content">Content</label> </br>
+        <input class="card_content" id="post_content" type="text" value="{{post.post_content}}" />
+      </div>
+      <div class="card_detail">
+        </br> </br>
+        <button class="btn_full" type="submit">Update Post</button>
+        </br> </br>
+        <button class="btn_full" type="button" class="delete-post-btn" id="delete_post">Delete</button>
+        </br> </br>
+      </div>
+    </section>
+  </form>
+</article>
+
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>

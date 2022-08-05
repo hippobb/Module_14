@@ -1,0 +1,1 @@
+document.getElementById('header_title').textContent="The Tech Blog";

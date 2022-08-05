@@ -1,0 +1,15 @@
+<article class="post">
+  
+  <section class="card">
+  <div class="card_title">
+    <a class="title" href="/dashboard/edit/{{id}}"  style="color: white">{{title}} </a>
+   <h3 class="info" style="color: white">Posted by {{user.username}} on {{format_date created_at}}</h3>
+      <a class="info" href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+   </div>
+  <div class="card_content">
+    <p>{{post_content}} </p>
+  </div>
+  </section>
+  </br>
+</article>
+

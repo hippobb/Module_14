@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS CMS_style_db;
+
+CREATE DATABASE CMS_style_db;
