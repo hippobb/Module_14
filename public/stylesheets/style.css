@@ -26,7 +26,7 @@ header {
 }
 #header_title{
   padding: 2%;
-  width: 350px;
+  width: 380px;
   background-color: rgb(223, 248, 235);
   box-shadow: 2px 5px #888888;
   font-size: larger;
@@ -52,7 +52,7 @@ header {
 .card_content, .comment_body{
    width: 100%;
    font-size: large;
-   height: 50px;
+   min-height: 50px;
 }
 .title{
   font-size: large;
